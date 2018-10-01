@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+   <style>
+    .periodic{
+      position: relative;
+      height: 1000px;
+    }
+
+    .periodic-row{
+      position: relative;
+      clear: both;
+      height: 10%;
+    }
+    .cell{
+      float: left;
+      position: relative;
+      width: 5.55%;
+      height: 100%;
+      box-sizing: border-box;
+      border: 1px solid white;
+    }
+    .element{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      font-weight: bold;
+      background-color: green;
+    }
+
+    .at_num{
+      position: absolute;
+      margin-left: 10px;
+      margin-bottom: 10px;
+      bottom: 0;
+      font-size: small;
+    }
+    .symbol{
+      position: absolute;
+      /* height: 100%;
+      width: 100%; */
+      text-align: center;
+      margin-left: 40px;
+      top: 30px;
+      font-weight: bold;
+      text-align: center;
+      font-size: 30px;
+      color: blue;
+    }
+    .at_details{
+      position: absolute;
+      margin-top: 1px;
+      right: 10px;
+      font-size: small;
+    }
+
+  </style>
+<title>Periodic Table</title>
+</head>
+<body background="https://img.freepik.com/free-vector/science-scribbles_23-2147501583.jpg?size=338&ext=jpg">
+  <div class="periodic">
+    <div class="periodic-row">
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">1</div>
+          <div class="symbol" contenteditable="true">H</div>
+          <div class="at_details" contenteditable="true">1.008</div>
+        </div>
+      </div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">2</div>
+          <div class="symbol" contenteditable="true">He</div>
+          <div class="at_details" contenteditable="true">4.0026</div>
+        </div>
+      </div>
+    </div>
+    <div class="periodic-row">
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">3</div>
+          <div class="symbol" contenteditable="true">Li</div>
+          <div class="at_details" contenteditable="true">6.94</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">4</div>
+          <div class="symbol" contenteditable="true">Be</div>
+          <div class="at_details" contenteditable="true">9.0122</div>
+        </div>
+      </div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">5</div>
+          <div class="symbol" contenteditable="true">B</div>
+          <div class="at_details" contenteditable="true">10.81</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">6</div>
+          <div class="symbol" contenteditable="true">C</div>
+          <div class="at_details" contenteditable="true">12.011</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">7</div>
+          <div class="symbol" contenteditable="true">N</div>
+          <div class="at_details" contenteditable="true">14.007</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">8</div>
+          <div class="symbol" contenteditable="true">O</div>
+          <div class="at_details" contenteditable="true">15.999</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">9</div>
+          <div class="symbol" contenteditable="true">F</div>
+          <div class="at_details" contenteditable="true">18.998</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">10</div>
+          <div class="symbol" contenteditable="true">Ne</div>
+          <div class="at_details" contenteditable="true">20.180</div>
+        </div>
+      </div>
+    </div>
+    <div class="periodic-row">
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">11</div>
+          <div class="symbol" contenteditable="true">Na</div>
+          <div class="at_details" contenteditable="true">22.990</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">12</div>
+          <div class="symbol" contenteditable="true">Mg</div>
+          <div class="at_details" contenteditable="true">24.305</div>
+        </div>
+      </div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">13</div>
+          <div class="symbol" contenteditable="true">Al</div>
+          <div class="at_details" contenteditable="true">26.982</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">14</div>
+          <div class="symbol" contenteditable="true">Si</div>
+          <div class="at_details" contenteditable="true">28.085</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">15</div>
+          <div class="symbol" contenteditable="true">P</div>
+          <div class="at_details" contenteditable="true">30.974</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">16</div>
+          <div class="symbol" contenteditable="true">S</div>
+          <div class="at_details" contenteditable="true">32.06</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">17</div>
+          <div class="symbol" contenteditable="true">Cl</div>
+          <div class="at_details" contenteditable="true">35.45</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">18</div>
+          <div class="symbol" contenteditable="true">Ar</div>
+          <div class="at_details" contenteditable="true">39.948</div>
+        </div>
+      </div>
+    </div>
+    <div class="periodic-row">
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">19</div>
+          <div class="symbol" contenteditable="true">K</div>
+          <div class="at_details" contenteditable="true">39.098</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">20</div>
+          <div class="symbol" contenteditable="true">Ca</div>
+          <div class="at_details" contenteditable="true">40.078</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">21</div>
+          <div class="symbol" contenteditable="true">Sc</div>
+          <div class="at_details" contenteditable="true">44.956</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">22</div>
+          <div class="symbol" contenteditable="true">Ti</div>
+          <div class="at_details" contenteditable="true">47.867</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">23</div>
+          <div class="symbol" contenteditable="true">V</div>
+          <div class="at_details" contenteditable="true">50.942</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">24</div>
+          <div class="symbol" contenteditable="true">Cr</div>
+          <div class="at_details" contenteditable="true">51.996</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">25</div>
+          <div class="symbol" contenteditable="true">Mn</div>
+          <div class="at_details" contenteditable="true">54.938</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">26</div>
+          <div class="symbol" contenteditable="true">Fe</div>
+          <div class="at_details" contenteditable="true">55.845</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">27</div>
+          <div class="symbol" contenteditable="true">Co</div>
+          <div class="at_details" contenteditable="true">58.933</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">28</div>
+          <div class="symbol" contenteditable="true">Ni</div>
+          <div class="at_details" contenteditable="true">58.693</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">29</div>
+          <div class="symbol" contenteditable="true">Cu</div>
+          <div class="at_details" contenteditable="true">63.546</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">30</div>
+          <div class="symbol" contenteditable="true">Zn</div>
+          <div class="at_details" contenteditable="true">65.38</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">31</div>
+          <div class="symbol" contenteditable="true">Ga</div>
+          <div class="at_details" contenteditable="true">69.723</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">32</div>
+          <div class="symbol" contenteditable="true">Ge</div>
+          <div class="at_details" contenteditable="true">72.63</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">33</div>
+          <div class="symbol" contenteditable="true">As</div>
+          <div class="at_details" contenteditable="true">74.922</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">34</div>
+          <div class="symbol" contenteditable="true">Se</div>
+          <div class="at_details" contenteditable="true">78.96</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">35</div>
+          <div class="symbol" contenteditable="true">Br</div>
+          <div class="at_details" contenteditable="true">79.904</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">36</div>
+          <div class="symbol" contenteditable="true">Kr</div>
+          <div class="at_details" contenteditable="true">83.798</div>
+        </div>
+      </div>
+    </div>
+    <div class="periodic-row">
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">37</div>
+          <div class="symbol" contenteditable="true">Rb</div>
+          <div class="at_details" contenteditable="true">85.468</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">38</div>
+          <div class="symbol" contenteditable="true">Sr</div>
+          <div class="at_details" contenteditable="true">87.62</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">39</div>
+          <div class="symbol" contenteditable="true">Y</div>
+          <div class="at_details" contenteditable="true">88.906</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">40</div>
+          <div class="symbol" contenteditable="true">Zr</div>
+          <div class="at_details" contenteditable="true">91.224</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">41</div>
+          <div class="symbol" contenteditable="true">Nb</div>
+          <div class="at_details" contenteditable="true">92.906</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">42</div>
+          <div class="symbol" contenteditable="true">Mo</div>
+          <div class="at_details" contenteditable="true">95.96</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">43</div>
+          <div class="symbol" contenteditable="true">Tc</div>
+          <div class="at_details" contenteditable="true">[97.91]</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">44</div>
+          <div class="symbol" contenteditable="true">Ru</div>
+          <div class="at_details" contenteditable="true">101.07</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">45</div>
+          <div class="symbol" contenteditable="true">Rh</div>
+          <div class="at_details" contenteditable="true">102.91</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">46</div>
+          <div class="symbol" contenteditable="true">Pd</div>
+          <div class="at_details" contenteditable="true">106.42</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">47</div>
+          <div class="symbol" contenteditable="true">Ag</div>
+          <div class="at_details" contenteditable="true">107.87</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">48</div>
+          <div class="symbol" contenteditable="true">Cd</div>
+          <div class="at_details" contenteditable="true">112.41</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">49</div>
+          <div class="symbol" contenteditable="true">In</div>
+          <div class="at_details" contenteditable="true">114.82</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">50</div>
+          <div class="symbol" contenteditable="true">Sn</div>
+          <div class="at_details" contenteditable="true">118.71</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">51</div>
+          <div class="symbol" contenteditable="true">Sb</div>
+          <div class="at_details" contenteditable="true">121.76</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">52</div>
+          <div class="symbol" contenteditable="true">Te</div>
+          <div class="at_details" contenteditable="true">127.60</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">53</div>
+          <div class="symbol" contenteditable="true">I</div>
+          <div class="at_details" contenteditable="true">126.90</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">54</div>
+          <div class="symbol" contenteditable="true">Xe</div>
+          <div class="at_details" contenteditable="true">131.29</div>
+        </div>
+      </div>
+    </div>
+    <div class="periodic-row">
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">55</div>
+          <div class="symbol" contenteditable="true">Cs</div>
+          <div class="at_details" contenteditable="true">132.91</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">56</div>
+          <div class="symbol" contenteditable="true">Ba</div>
+          <div class="at_details" contenteditable="true">137.33</div>
+        </div>
+      </div>
+      <div class="cell"></div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">72</div>
+          <div class="symbol" contenteditable="true">Hf</div>
+          <div class="at_details" contenteditable="true">178.49</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">73</div>
+          <div class="symbol" contenteditable="true">Ta</div>
+          <div class="at_details" contenteditable="true">180.95</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">74</div>
+          <div class="symbol" contenteditable="true">W</div>
+          <div class="at_details" contenteditable="true">183.84</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">75</div>
+          <div class="symbol" contenteditable="true">Re</div>
+          <div class="at_details" contenteditable="true">186.21</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">76</div>
+          <div class="symbol" contenteditable="true">Os</div>
+          <div class="at_details" contenteditable="true">190.23</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">77</div>
+          <div class="symbol" contenteditable="true">Ir</div>
+          <div class="at_details" contenteditable="true">192.22</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">78</div>
+          <div class="symbol" contenteditable="true">Pt</div>
+          <div class="at_details" contenteditable="true">195.08</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">79</div>
+          <div class="symbol" contenteditable="true">Au</div>
+          <div class="at_details" contenteditable="true">196.97</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">80</div>
+          <div class="symbol" contenteditable="true">Hg</div>
+          <div class="at_details" contenteditable="true">200.59</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">81</div>
+          <div class="symbol" contenteditable="true">Tl</div>
+          <div class="at_details" contenteditable="true">204.38</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">82</div>
+          <div class="symbol" contenteditable="true">Pb</div>
+          <div class="at_details" contenteditable="true">207.2</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">83</div>
+          <div class="symbol" contenteditable="true">Bi</div>
+          <div class="at_details" contenteditable="true">208.98</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">84</div>
+          <div class="symbol" contenteditable="true">Po</div>
+          <div class="at_details" contenteditable="true">[208.98]</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">85</div>
+          <div class="symbol" contenteditable="true">At</div>
+          <div class="at_details" contenteditable="true">[209.99]</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">86</div>
+          <div class="symbol" contenteditable="true">Rn</div>
+          <div class="at_details" contenteditable="true">[222.02]</div>
+        </div>
+      </div>
+    </div>
+    <div class="periodic-row">
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">87</div>
+          <div class="symbol" contenteditable="true">Fr</div>
+          <div class="at_details" contenteditable="true">[223.02]</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">88</div>
+          <div class="symbol" contenteditable="true">Ra</div>
+          <div class="at_details" contenteditable="true">[226.03]</div>
+        </div>
+      </div>
+      <div class="cell"></div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">104</div>
+          <div class="symbol" contenteditable="true">Rf</div>
+          <div class="at_details" contenteditable="true">[265.12]</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">105</div>
+          <div class="symbol" contenteditable="true">Db</div>
+          <div class="at_details" contenteditable="true">[268.13]</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">106</div>
+          <div class="symbol" contenteditable="true">Sg</div>
+          <div class="at_details" contenteditable="true">[271.13]</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">107</div>
+          <div class="symbol" contenteditable="true">Bh</div>
+          <div class="at_details" contenteditable="true">[270]</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">108</div>
+          <div class="symbol" contenteditable="true">Hs</div>
+          <div class="at_details" contenteditable="true">[277.15]</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">109</div>
+          <div class="symbol" contenteditable="true">Mt</div>
+          <div class="at_details" contenteditable="true">[276.15]</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">110</div>
+          <div class="symbol" contenteditable="true">Ds</div>
+          <div class="at_details" contenteditable="true">[281.16]</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">111</div>
+          <div class="symbol" contenteditable="true">Rg</div>
+          <div class="at_details" contenteditable="true">[280.16]</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">112</div>
+          <div class="symbol" contenteditable="true">Cn</div>
+          <div class="at_details" contenteditable="true">[285.17]</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">113</div>
+          <div class="symbol" contenteditable="true">Uut</div>
+          <div class="at_details" contenteditable="true">[284.18]</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">114</div>
+          <div class="symbol" contenteditable="true">Fl</div>
+          <div class="at_details" contenteditable="true">[289.19]</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">115</div>
+          <div class="symbol" contenteditable="true">Uup</div>
+          <div class="at_details" contenteditable="true">[288.19]</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">116</div>
+          <div class="symbol" contenteditable="true">Lv</div>
+          <div class="at_details" contenteditable="true">[293]</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">117</div>
+          <div class="symbol" contenteditable="true">Uus</div>
+          <div class="at_details" contenteditable="true">[294]</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">118</div>
+          <div class="symbol" contenteditable="true">Uuo</div>
+          <div class="at_details" contenteditable="true">[294]</div>
+        </div>
+      </div>
+    </div>
+    <div class="periodic-row"></div>
+    <div class="periodic-row">
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">57</div>
+          <div class="symbol" contenteditable="true">La</div>
+          <div class="at_details" contenteditable="true">138.91</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">58</div>
+          <div class="symbol" contenteditable="true">Ce</div>
+          <div class="at_details" contenteditable="true">140.12</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">59</div>
+          <div class="symbol" contenteditable="true">Pr</div>
+          <div class="at_details" contenteditable="true">140.91</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">60</div>
+          <div class="symbol" contenteditable="true">Nd</div>
+          <div class="at_details" contenteditable="true">144.24</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">61</div>
+          <div class="symbol" contenteditable="true">Pm</div>
+          <div class="at_details" contenteditable="true">[144.91]</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">62</div>
+          <div class="symbol" contenteditable="true">Sm</div>
+          <div class="at_details" contenteditable="true">150.36</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">63</div>
+          <div class="symbol" contenteditable="true">Eu</div>
+          <div class="at_details" contenteditable="true">151.96</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">64</div>
+          <div class="symbol" contenteditable="true">Gd</div>
+          <div class="at_details" contenteditable="true">157.25</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">65</div>
+          <div class="symbol" contenteditable="true">Tb</div>
+          <div class="at_details" contenteditable="true">158.93</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">66</div>
+          <div class="symbol" contenteditable="true">Dy</div>
+          <div class="at_details" contenteditable="true">162.50</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">67</div>
+          <div class="symbol" contenteditable="true">Ho</div>
+          <div class="at_details" contenteditable="true">164.93</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">68</div>
+          <div class="symbol" contenteditable="true">Er</div>
+          <div class="at_details" contenteditable="true">167.26</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">69</div>
+          <div class="symbol" contenteditable="true">Tm</div>
+          <div class="at_details" contenteditable="true">168.93</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">70</div>
+          <div class="symbol" contenteditable="true">Yb</div>
+          <div class="at_details" contenteditable="true">173.05</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">71</div>
+          <div class="symbol" contenteditable="true">Lu</div>
+          <div class="at_details" contenteditable="true">174.97</div>
+        </div>
+      </div>
+    </div>
+    <div class="periodic-row">
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">89</div>
+          <div class="symbol" contenteditable="true">Ac</div>
+          <div class="at_details" contenteditable="true">[227.03]</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">90</div>
+          <div class="symbol" contenteditable="true">Th</div>
+          <div class="at_details" contenteditable="true">232.04</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">91</div>
+          <div class="symbol" contenteditable="true">Pa</div>
+          <div class="at_details" contenteditable="true">231.04</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">92</div>
+          <div class="symbol" contenteditable="true">U</div>
+          <div class="at_details" contenteditable="true">238.03</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">93</div>
+          <div class="symbol" contenteditable="true">Np</div>
+          <div class="at_details" contenteditable="true">[237.05]</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">94</div>
+          <div class="symbol" contenteditable="true">Pu</div>
+          <div class="at_details" contenteditable="true">[244.06]</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">95</div>
+          <div class="symbol" contenteditable="true">Am</div>
+          <div class="at_details" contenteditable="true">[243.06]</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">96</div>
+          <div class="symbol" contenteditable="true">Cm</div>
+          <div class="at_details" contenteditable="true">[247.07]</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">97</div>
+          <div class="symbol" contenteditable="true">Bk</div>
+          <div class="at_details" contenteditable="true">[247.07]</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">98</div>
+          <div class="symbol" contenteditable="true">Cf</div>
+          <div class="at_details" contenteditable="true">[251.08]</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">99</div>
+          <div class="symbol" contenteditable="true">Es</div>
+          <div class="at_details" contenteditable="true">[252.08]</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">100</div>
+          <div class="symbol" contenteditable="true">Fm</div>
+          <div class="at_details" contenteditable="true">[257.10]</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">101</div>
+          <div class="symbol" contenteditable="true">Md</div>
+          <div class="at_details" contenteditable="true">[258.10]</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">102</div>
+          <div class="symbol" contenteditable="true">No</div>
+          <div class="at_details" contenteditable="true">[259.10]</div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="element">
+          <div class="at_num" contenteditable="true">103</div>
+          <div class="symbol" contenteditable="true">Lr</div>
+          <div class="at_details" contenteditable="true">[262.11]</div>
+        </div>
+      </div>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+</body>
+</html>

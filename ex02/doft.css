@@ -1,0 +1,114 @@
+/* .day_starts{
+  height: auto;
+  width: 70%;
+  background-color: #929292;
+  background-color: grey;
+} */
+.day42 {
+  position: relative;
+  float: left;
+  height: 100%;
+  width: 80%;
+
+}
+.day42 img{
+  height: 100%;
+  width: 40%;
+
+}
+.loupe {
+  position: relative;
+  float:left;
+  height: 100%;
+  width: 15%;
+  bottom: -10px;
+}
+.reload {
+  position: relative;
+  float:right;
+  height: 100%;
+  width: 5%;
+}
+.reload img{
+  position: absolute;
+  left: 45px;
+  top: 5px;
+  height: 20%;
+  width: 20%;
+}
+.close {
+  position: relative;
+  float:right;
+  height: 100%;
+  width: 5%;
+}
+.close img{
+  position: relative;
+  left: 45px;
+  bottom: 40px;
+  height: 20%;
+  width: 20%;
+}
+.left-bar{
+  margin-left: 20px;
+  margin-top: 20px;
+  float:left;
+  width: 140px;
+  height: 420px;
+  background: #909090;
+}
+.left-bar img{
+  margin-top: 5px;
+  margin-left: 28px;
+  width: 60%;
+  height: 60%;
+}
+.arrow , .main, .oeil, .outil, .chat{
+  float: left;
+  width: 100%;
+  height: 20%;
+}
+.main img{
+  float: left;
+  width: 100%;
+  height: 20%;
+}
+.oeil {
+  float: left;
+  width: 80%;
+  height: 80%;
+}
+.outil, .chat{
+  float: left;
+  width: 100%;
+  height:20%;
+
+}
+.layer2{
+  width: 1425px;
+  height: 140px;
+  margin: auto;
+}
+
+.icons {
+  width: 70px;
+}
+
+
+/* .grey {
+  width: 1425px;
+  height: 140px;
+  margin: auto;
+  background: #909090;
+} */
+.top_bar {
+  width: 1425px;
+  height: 140px;
+  margin: auto;
+  background: #909090;
+}
+
+/* .grey img {
+  height: 140px;
+  margin: 0px auto;
+} */
